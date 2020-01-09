@@ -1,18 +1,32 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div >
+     <Email/>
+    <NewForm />
+   
+      <Preview/>
+        <button/>
+       
+   
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Email from  './components/Email.vue'
+import NewForm from './components/NewForm.vue'
+
+import RadioButton from  './components/RadioButton.vue'
+import Preview from  './components/Preview.vue'
+
+
+
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+components:{
+  NewForm,
+  Email,
+ Preview,
+ TxtArea
+}
 }
 </script>
 
@@ -26,3 +40,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+
